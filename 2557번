@@ -1,0 +1,5 @@
+#include <stdio.h> 
+int main (void) 
+{ 
+    printf("Hello World! \n");      # c언어 출력문 printf 사용
+}
