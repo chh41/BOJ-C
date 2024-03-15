@@ -1,0 +1,12 @@
+#include <stdio.h>               # 표준 입출력 헤더파일 선언
+int main (void) 
+{ 
+    int a;                       # a,b 변수 형 선언 ( 초기화 안해줬으니까 쓰레기 값 들어가있음 )
+    int b;
+
+    scanf("%d %d", &a, &b);      # a,b값 입력 받아 초기화하기
+
+    printf("%d \n", a-b);        # a-b값 출력하기
+
+    return 0;
+}
