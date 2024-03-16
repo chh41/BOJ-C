@@ -1,0 +1,11 @@
+#include <stdio.h> 
+int main (void) 
+{ 
+    char a [50];
+
+    scanf("%s", a);
+
+    printf("%s\?\?!\n", a);          # trigraph ignored ( 특정 문자 3개 연속으로 오면 대체 해서 출력함. 그래서 \ 로 문자라는 것을 표현 )
+
+    return 0;
+}
