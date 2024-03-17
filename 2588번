@@ -1,0 +1,16 @@
+#include <stdio.h> 
+int main (void) 
+{ 
+    int a;
+    int b;
+    int c;
+
+    scanf("%d %d", &a, &b);
+    
+    printf("%d\n", a*(b%10));
+    printf("%d\n", a*((b%100-b%10)/10));      # 배열로 b[0], b[1], b[2] 이런 식으로 값만 뽑고 싶었는데 실패
+    printf("%d\n", a*(b/100));
+    printf("%d\n", a*b);
+
+    return 0;
+}
