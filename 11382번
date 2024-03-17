@@ -1,0 +1,10 @@
+#include <stdio.h> 
+int main (void) 
+{ 
+    long int a, b, c;
+    
+    scanf("%ld %ld %ld", &a, &b, &c);    # 문제의 a,b,c 범위가 10^12까지
+                                         # int는 4바이트 = 21억 정도까지만 표현 가능
+    printf("%ld\n", a+b+c);              # long int 사용 = 8바이트 = 900경까지 표현 가능
+    return 0;
+}
