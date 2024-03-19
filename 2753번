@@ -1,0 +1,16 @@
+#include <stdio.h> 
+int main (void) 
+{ 
+    int a;
+    
+    scanf("%d", &a);
+
+  if (a%4==0)                        # 4의 배수이면서 100배수가 아니거나 400의 배수일 때.
+        if (a%100 !=0 || a%400==0)   # 해서 or || 써서 100의 배수가 아니거나 혹은 400의 배수일 때만 1 출력
+            printf("%d\n", 1);
+        else
+            printf("%d\n", 0);
+    else
+        printf("%d\n", 0);
+    return 0;
+}
