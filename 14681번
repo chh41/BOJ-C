@@ -1,0 +1,21 @@
+#include <stdio.h> 
+int main (void) 
+{ 
+    int a, b;
+    
+    scanf("%d", &a);
+    scanf("%d", &b);
+
+    if (a>0)                        # a가 양수면 1,4 사분면 중 하나
+        if (b>0)
+            printf("%d\n", 1);      # b가 양수니까 1 사분면
+        else
+            printf("%d\n", 4);      # b가 음수니까 4 사분면
+    else                            # a가 음수면 2,3 사분면 중 하나
+        if (b>0)
+            printf("%d\n", 2);      # b가 양수니까 2 사분면
+        else
+            printf("%d\n", 3);      # b가 음수니까 3 사분면
+
+    return 0;
+}
