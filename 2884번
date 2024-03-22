@@ -1,0 +1,25 @@
+#include <stdio.h> 
+int main (void) 
+{ 
+    int h;
+    int m;
+
+    scanf("%d %d", &h, &m);
+
+    m = m + h * 60;
+
+    m -= 45;
+
+    h = m/60;
+    m = m%60;
+   
+    if (m < 0)      
+    {
+        m += 60;
+        h = 23;
+    }
+    printf("%d %d\n",h,m);
+
+    return 0;
+    
+}
