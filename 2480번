@@ -1,0 +1,33 @@
+#include <stdio.h> 
+int main (void) 
+{ 
+    int d1, d2, d3;
+    int t;
+
+    scanf("%d %d %d", &d1, &d2, &d3);
+    
+    if (d1>d2)
+        if (d1>d3)
+            t = d1;
+        else
+            t = d3;
+    else
+        if (d2>d3)
+            t = d2;
+        else
+            t = d3;
+
+
+    if (d1==d2 && d2==d3)
+        printf("%d\n", d1*1000 + 10000);
+    else if (d1 == d2 || d2 == d3)
+        printf("%d\n", d2*100 + 1000);
+    else if (d1 == d3)
+        printf("%d\n", d1*100 + 1000);
+    else
+        printf("%d\n", t*100);
+
+    return 0;
+
+
+}
