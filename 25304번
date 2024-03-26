@@ -1,0 +1,21 @@
+#include <stdio.h> 
+#include <math.h>
+int main (void) 
+{ 
+    int t, a, q, w, s = 0;
+
+    scanf("%d", &t);
+    scanf("%d", &a);
+
+    for (int i = 1 ; i <= a; i++)
+    {
+        scanf("%d %d", &q, &w);
+        s += q * w;
+    }
+    if (s == t)
+        printf("Yes\n");
+    else
+        printf("No\n");
+
+    return 0;
+}
