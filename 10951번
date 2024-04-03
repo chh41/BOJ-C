@@ -1,0 +1,11 @@
+int main(void)
+{
+    
+    int a, b;
+    
+    while(scanf("%d %d", &a, &b) != EOF)  # EOF = end of file / 이 아닐 때만 실행 
+    {     
+        printf("%d\n", a+b);
+    }
+    return 0; 
+}
