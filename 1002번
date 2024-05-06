@@ -1,0 +1,39 @@
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+    int try;
+    int x1,x2,y1,y2,r1,r2;
+    double dis;
+    scanf("%d", &try);
+    int tem;
+    for (int i = 1 ; i <= try; i++)
+    {
+        scanf("%d %d %d %d %d %d", &x1,&y1,&r1,&x2,&y2,&r2);
+
+        dis = sqrt((x1-x2)*(x1-x2)+(y1-y2)*(y1-y2));
+        if (r1 < r2)
+        {
+            tem = r2;
+            r2 = r1;
+            r1 = tem;
+        }
+        if (x1==x2 && y1==y2 && r1==r2)
+        {
+            printf("-1\n");
+        }
+        else if (dis > (r1+r2) || (x1==x2 && y1==y2) || (r1-r2) > dis)
+        {
+            printf("0\n");
+        }
+        else if (dis == (r1+r2) || dis == (r1-r2))
+        {
+            printf("1\n");
+        }
+        else if (dis < (r1+r2) && dis > (r1-r2))
+        {
+            printf("2\n");
+        }
+    } 
+    return 0;
+}
