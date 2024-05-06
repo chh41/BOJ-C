@@ -1,0 +1,25 @@
+#include<stdio.h>
+
+long long fact(int a, int b)
+{
+    
+    long long z = 1;
+    for (int i = 1; i <= a ; i++)
+    {
+        z *= b-i+1;
+        z /= i;
+    }
+    return z;
+}
+int main()
+{
+    int a, b;
+    int try;
+    scanf("%d", &try);
+    for (int i = 1; i<=try; i++)
+    {
+        scanf("%d %d", &a, &b);
+        printf("%lld\n", fact(a,b));
+    }
+    return 0;
+}
